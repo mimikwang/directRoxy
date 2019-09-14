@@ -1,6 +1,6 @@
 Package: directRoxy
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Converts roxygen2 tags without package
 Version: 0.1.0
 Author: Mimi Wang
 Maintainer: Mimi Wang <mimikwang@gmail.com>

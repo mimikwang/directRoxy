@@ -1,5 +1,5 @@
 # directRoxy
-[![Build Status](https://travis-ci.org/mimikwang/directRoxy.svg?branch=master)](https://travis-ci.org/mimikwang/directRoxy)
+[![Build Status](https://travis-ci.org/mimikwang/directRoxy.svg?branch=master)](https://travis-ci.org/mimikwang/directRoxy) [![codecov](https://codecov.io/gh/mimikwang/directRoxy/branch/master/graph/badge.svg)](https://codecov.io/gh/mimikwang/directRoxy)
 
 ## Overview
 The purpose of directRoxy is to directly generate Rd and HTML files from R scripts
