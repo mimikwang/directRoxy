@@ -18,7 +18,7 @@
 #' @examples
 #' roxy2Rd("/path/to/script.R", "/path/output/")
 #'
-#' @import roxygen2 tools
+#' @import roxygen2
 #' @export
 roxy2Rd <- function(input, output, env = NULL) {
   list_files <- .roxytotemp(input, tempdir(), env)

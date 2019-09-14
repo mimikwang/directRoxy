@@ -3,4 +3,3 @@
 export(roxy2HTML)
 export(roxy2Rd)
 import(roxygen2)
-import(tools)

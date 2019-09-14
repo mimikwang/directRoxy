@@ -19,7 +19,7 @@
 #' @examples
 #' roxy2HTML("/path/to/script.R", "/path/output/")
 #'
-#' @import roxygen2 tools
+#' @import roxygen2
 #' @export
 roxy2HTML <- function(input, output, env = NULL, ...) {
   list_files <- .roxytotemp(input, tempdir(), env)
