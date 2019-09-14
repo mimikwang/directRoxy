@@ -21,19 +21,7 @@
 #' @import roxygen2 tools
 #' @export
 roxy2Rd <- function(input, output, env = NULL) {
-  # Parse File for roxyblocks
-  rblocks <- roxygen2::parse_file(input, env = env)
-
-  # Save Output to temp directory
-  if (!(dir.exists(file.path(tempdir(), "man")))) {
-    dir.create(file.path(tempdir(), "man"))
-  }
-  roclet  <- roxygen2::rd_roclet()
-  process <- roxygen2::roclet_process(roclet, rblocks, base_path = tempdir())
-  roxygen2::roclet_output(roclet, process, base_path = tempdir())
-
-  # Copy Rd to Output Directory
-  list_files <- list.files(path = file.path(tempdir(), "man"), pattern = ".Rd$", full.names = TRUE)
+  list_files <- .roxytotemp(input, tempdir(), env)
   for (file in list_files) {
     file.copy(from = file, to = file.path(output, basename(file)))
   }
