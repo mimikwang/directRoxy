@@ -6,7 +6,7 @@ Author: Mimi Wang
 Maintainer: Mimi Wang <mimikwang@gmail.com>
 Description: Covert R scripts with roxygen2 blocks and convert directly
     to Rd or HTML without having the scripts be in a package.
-License: MIT
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1

@@ -17,7 +17,9 @@
 #' This function doesn't return anything
 #'
 #' @examples
+#' \dontrun{
 #' roxy2HTML("/path/to/script.R", "/path/output/")
+#' }
 #'
 #' @import roxygen2
 #' @export

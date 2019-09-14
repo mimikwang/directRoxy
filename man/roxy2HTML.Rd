@@ -26,6 +26,8 @@ Takes, as input, an R script with roxygen2 tags and outputs the
 HTML file to an output folder
 }
 \examples{
+\dontrun{
 roxy2HTML("/path/to/script.R", "/path/output/")
+}
 
 }
