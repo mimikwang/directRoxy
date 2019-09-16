@@ -1,10 +1,10 @@
 Package: directRoxy
 Type: Package
-Title: Converts roxygen2 tags without package
+Title: Converts Roxygen2 Tags without Package
 Version: 0.1.0
 Author: Mimi Wang
 Maintainer: Mimi Wang <mimikwang@gmail.com>
-Description: Covert R scripts with roxygen2 blocks and convert directly
+Description: Covert R scripts with 'roxygen2' blocks and convert directly
     to Rd or HTML without having the scripts be in a package.
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -14,3 +14,4 @@ Imports:
     roxygen2
 Suggests:
     testthat
+URL: https://github.com/mimikwang/directRoxy
