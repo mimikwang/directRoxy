@@ -1,6 +1,6 @@
 Package: directRoxy
 Type: Package
-Title: Converts Roxygen2 Tags without Package
+Title: Converts 'roxygen2' Tags without Package
 Version: 0.1.0
 Author: Mimi Wang
 Maintainer: Mimi Wang <mimikwang@gmail.com>
@@ -15,3 +15,4 @@ Imports:
 Suggests:
     testthat
 URL: https://github.com/mimikwang/directRoxy
+BugReports: http://github.com/mimikwang/directRoxy/issues
