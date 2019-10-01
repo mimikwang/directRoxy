@@ -24,8 +24,6 @@ Takes, as input, an R script with roxygen2 tags and outputs the
 Rd file to an output folder
 }
 \examples{
-\dontrun{
-roxy2Rd("/path/to/script.R", "/path/output/")
-}
+# roxy2Rd("/path/to/script.R", "/path/output/")
 
 }
