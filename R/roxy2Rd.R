@@ -16,15 +16,14 @@
 #' This function doesn't return anything
 #'
 #' @examples
-#' \dontrun{
-#' roxy2Rd("/path/to/script.R", "/path/output/")
-#' }
+#' # roxy2Rd("/path/to/script.R", "/path/output/")
 #'
 #' @import roxygen2
 #' @export
 roxy2Rd <- function(input, output, env = NULL) {
-  list_files <- .roxytotemp(input, tempdir(), env)
+  list_files <- .roxytotemp(input, output, env)
   for (file in list_files) {
     file.copy(from = file, to = file.path(output, basename(file)))
   }
+  unlink(file.path(output, "man"), recursive = TRUE)
 }

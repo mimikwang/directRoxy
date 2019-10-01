@@ -17,15 +17,14 @@
 #' This function doesn't return anything
 #'
 #' @examples
-#' \dontrun{
-#' roxy2HTML("/path/to/script.R", "/path/output/")
-#' }
+#' # roxy2HTML("/path/to/script.R", "/path/output/")
 #'
 #' @import roxygen2
 #' @export
 roxy2HTML <- function(input, output, env = NULL, ...) {
-  list_files <- .roxytotemp(input, tempdir(), env)
+  list_files <- .roxytotemp(input, output, env)
   for (file in list_files) {
     tools::Rd2HTML(file, out = file.path(output, paste0(tools::file_path_sans_ext(basename(file)), ".html")), ...)
   }
+  unlink(file.path(output, "man"), recursive = TRUE)
 }
