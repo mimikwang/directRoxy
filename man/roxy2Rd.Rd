@@ -24,6 +24,7 @@ Takes, as input, an R script with roxygen2 tags and outputs the
 Rd file to an output folder
 }
 \examples{
-# roxy2Rd("/path/to/script.R", "/path/output/")
+input_path <- system.file("examples/script.R", package = "directRoxy")
+roxy2Rd(input_path, tempdir())
 
 }

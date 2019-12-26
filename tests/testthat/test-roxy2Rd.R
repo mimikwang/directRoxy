@@ -1,3 +1,4 @@
 test_that("Convert script.R", {
-  expect_error(roxy2Rd("script.R", tempdir()), NA)
+  input_path <- system.file("examples/script.R", package = "directRoxy")
+  expect_error(roxy2Rd(input_path, tempdir()), NA)
 })

@@ -16,7 +16,8 @@
 #' This function doesn't return anything
 #'
 #' @examples
-#' # roxy2Rd("/path/to/script.R", "/path/output/")
+#' input_path <- system.file("examples/script.R", package = "directRoxy")
+#' roxy2Rd(input_path, tempdir())
 #'
 #' @import roxygen2
 #' @export
